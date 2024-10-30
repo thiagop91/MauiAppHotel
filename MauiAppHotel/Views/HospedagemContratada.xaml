@@ -54,7 +54,7 @@
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Label Text="Valor Total: " />
                 <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'} "
-                       TextColor="{StaticResource Primary}/>
+                       TextColor="{StaticResource Primary}" />
             </HorizontalStackLayout>
         </Frame>
 
