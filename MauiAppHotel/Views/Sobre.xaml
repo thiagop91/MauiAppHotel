@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource SecondaryDarkText}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+        <Label 
+            Text="Sobre"
+            FontFamily="ComicNeue"
+            FontSize="50"
+            TextColor="{StaticResource Black}" />
+
+        <Frame Padding="10" BackgroundColor="{StaticResource Secondary}" BorderColor="{StaticResource Black}">
+            <Label
+            Text="Bem-vindo ao nosso hotel, onde conforto, qualidade e hospitalidade se encontram em um só lugar. Nosso objetivo é proporcionar uma experiência inesquecível aos nossos hóspedes, seja você que está aqui a negócios, lazer ou uma combinação de ambos."
+            FontSize="17"
+            FontFamily="ComicNeue"
+            TextColor="{StaticResource Black}" />
+        </Frame>
+
+        <Frame Padding="10" BackgroundColor="{StaticResource Secondary}" BorderColor="{StaticResource Black}">
+            <VerticalStackLayout>
+            
+                    <Label
+                    Text="Desenvolvido por: Thiago Pereira de Oliveira" FontSize="12"
+                    FontFamily="ComicNeue"
+                    TextColor="{StaticResource Black}" />
+
+                    <Label
+                    Text="Ano: 2024" FontSize="12"
+                    FontFamily="ComicNeue"
+                    TextColor="{StaticResource Black}" />
+
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                FontFamily="ComicNeue"
+                HorizontalOptions="Center"
+                Clicked ="Button_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
