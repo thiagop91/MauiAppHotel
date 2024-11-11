@@ -10,8 +10,15 @@
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10"
                          Spacing="10">
-        <Button Text="Sobre" HorizontalOptions="EndAndExpand" FontFamily="ComicNeue" Clicked="Button_Clicked_1"/>
+        
+                <Grid RowDefinitions="*, *"
+                ColumnDefinitions="*, *">
 
+                        <Button Grid.Row="0" Grid.Column="1" Text="Sobre" HorizontalOptions="EndAndExpand" FontFamily="ComicNeue" Clicked="Button_Clicked_1"/>
+                        <Button Grid.Row="0" Grid.Column="0" Text="Galeria" HorizontalOptions="StartAndExpand" FontFamily="ComicNeue" Clicked="Button_Clicked_2"/>
+
+                 </Grid>
+        
         <Label Text="Cálculo da Diária"
                FontFamily="ComicNeue"
                FontSize="50"

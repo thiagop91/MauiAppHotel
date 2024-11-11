@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Galeria"
+             Title="Galeria"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource SecondaryDarkText}">
+    
+    
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+        <Label 
+            Text="Galeria"
+            FontFamily="ComicNeue"
+            FontSize="50"
+            TextColor="{StaticResource Black}" />
+
+        <Grid RowDefinitions="Auto, Auto, Auto, Auto"
+              ColumnDefinitions="Auto, Auto"
+              Padding="3"
+              ColumnSpacing="15"
+              RowSpacing="20">
+
+            <Image Grid.Row="0" Grid.Column="0"
+                Source="crise.png"
+                HeightRequest="150"
+                Aspect="AspectFit"/>
+
+            <Label Grid.Row="1" Grid.Column="0"
+                    Text="Suíte Crise" FontSize="15"
+                    FontFamily="ComicNeue"
+                    TextColor="{StaticResource Black}" />
+
+            <Image Grid.Row="0" Grid.Column="1"
+                Source="single.png"
+                HeightRequest="130"
+                Aspect="AspectFit"/>
+
+            <Label Grid.Row="1" Grid.Column="1"
+                    Text="Suíte Single" FontSize="15"
+                    FontFamily="ComicNeue"
+                    TextColor="{StaticResource Black}" />
+
+            <Image Grid.Row="2" Grid.Column="0"
+                Source="luxo.png"
+                HeightRequest="110"
+                Aspect="AspectFit"/>
+
+            <Label Grid.Row="3" Grid.Column="0"
+                    Text="Suíte Luxo" FontSize="15"
+                    FontFamily="ComicNeue"
+                    TextColor="{StaticResource Black}" />
+
+            <Image Grid.Row="2" Grid.Column="1"
+                Source="super_luxo.png"
+                HeightRequest="120"
+                Aspect="AspectFit"/>
+
+            <Label Grid.Row="4" Grid.Column="2"
+                    Text="Suíte Super Luxo" FontSize="15"
+                    FontFamily="ComicNeue"
+                    TextColor="{StaticResource Black}" />
+
+        </Grid>
+
+            <Button Text="Voltar"
+                     FontFamily="ComicNeue"
+                     HorizontalOptions="Center"
+                     VerticalOptions="EndAndExpand"
+                     Clicked="Button_Clicked"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

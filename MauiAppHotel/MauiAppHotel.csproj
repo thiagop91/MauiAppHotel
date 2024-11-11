@@ -63,6 +63,10 @@
 	  <None Remove="Resources\Fonts\Kalam-Bold.ttf" />
 	  <None Remove="Resources\Fonts\Kalam-Light.ttf" />
 	  <None Remove="Resources\Fonts\Kalam-Regular.ttf" />
+	  <None Remove="Resources\Images\crise.png" />
+	  <None Remove="Resources\Images\luxo.png" />
+	  <None Remove="Resources\Images\single.png" />
+	  <None Remove="Resources\Images\super_luxo.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -73,6 +77,9 @@
 
 	<ItemGroup>
 	  <MauiXaml Update="Views\ContratacaoHospedagem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Galeria.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\HospedagemContratada.xaml">
